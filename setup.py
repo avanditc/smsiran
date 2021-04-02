@@ -14,6 +14,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/avanditc/smsiran",
+    download_url = 'https://github.com/avanditc/smsiran/archive/refs/tags/v0.0.1.tar.gz',
     project_urls={
         "Bug Tracker": "https://github.com/avanditc/smsiran/issues",
         "Owner": "https://AvandITC.ir",
