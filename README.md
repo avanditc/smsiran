@@ -19,6 +19,23 @@ Each web service in the form of a Python class will be able to embed in your app
 
 هر وب سرویس به صورت یک کلاس پایتون قابلیت درون سپاری در برنامه های شما خواهد داشت.
 
+## Example for SMS.IR
+
+``` python
+>>> from smsiran import SmsIR
+# Create object with "UserApiKey","SecretKey" inputs.
+# it will create token for you and print it:
+>>> smsir = SmsIR("14769***********9c4","it66*********445")
+# Send OTP with otp fucntion and "mobile number" and "otp code" as input:
+>>> smsir.otp("0915***8139","951234")
+"""
+VerificationCodeId : [a float number]
+IsSuccessful : True
+Message : your verification code is sent
+Verification Code is: 951234
+"""
+```
+
 ## Web Services
 
 List of supported SMS web services: (Other web services will be added over time)
