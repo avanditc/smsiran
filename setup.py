@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="smsiran",
-    version="0.0.2",
+    version="0.0.3",
     author="Soroush piri zendedel",
     author_email="soroush_zendedel@live.com",
     keywords=["SMS","Persian","iran","web service","sms web service"],
@@ -14,7 +14,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/avanditc/smsiran",
-    download_url = 'https://github.com/avanditc/smsiran/archive/refs/tags/v0.0.2.tar.gz',
+    download_url = 'https://github.com/avanditc/smsiran/archive/refs/tags/v0.0.3.tar.gz',
     project_urls={
         "Bug Tracker": "https://github.com/avanditc/smsiran/issues",
         "Owner": "https://AvandITC.ir",
