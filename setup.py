@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="smsiran",
-    version="0.0.1",
+    version="0.0.2",
     author="Soroush piri zendedel",
     author_email="soroush_zendedel@live.com",
     keywords=["SMS","Persian","iran","web service","sms web service"],
