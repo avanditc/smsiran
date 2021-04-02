@@ -31,7 +31,6 @@ setuptools.setup(
     packages=setuptools.find_packages(where="src"),
     install_requires=[
         'requests',
-        'json',
     ],
     python_requires=">=3.6",
 )
