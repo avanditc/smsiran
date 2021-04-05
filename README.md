@@ -5,6 +5,18 @@ Unfortunately, Iranian web services do not have the necessary code to use the te
 We will be continuously adding more web services to the module.
 Please join us in completing the module if you have Python programming skills and have access to one of the web SMS services.
 
+## Web Services
+
+List of supported SMS web services: (Other web services will be added over time)
+لیست وب سرویس های پیامکی که پشتیبانی می شوند: (به مرور زمان دیگر وب سرویس ها نیز اضافه می شوند)
+
+|SMS Web Service |Module Name                          |Class Name                         |
+|----------------|-------------------------------|-----------------------------|
+|SMS.ir          |`sms_ir.py`                    |`SmsIR`                  |
+|Kavenegar.com   |`ghasedak.py`                  |`Ghasedak`              |
+|Ghasedak.io     |`Not Yet`                      |`Not Yet`              |
+|etc.            |`Not Yet`                      |`Not Yet`              |
+
 ## ماژول پایتون ارسال پیامک برای وب سرویس های ایرانی
 
 متاسفانه وب سرویس های ایرانی فاقد کدهای لازم برای استفاده ابزارهای ارسال پیامک برای پایتون می باشند. ماژولی که اینجا شاهد آن هستید مجموعه کدهایی است تا بتوانید به آسانی عملیات ارسال پیامک را با تمامی وب سرویس های ارسال پیامک انجام دهید.
@@ -21,6 +33,8 @@ Each web service in the form of a Python class will be able to embed in your app
 
 ## Example for SMS.IR
 
+[Sms.ir sms webservice](https://sms.ir) python package.
+
 ``` python
 >>> from smsiran import SmsIR
 # Create object with "UserApiKey","SecretKey" inputs.
@@ -36,14 +50,22 @@ Verification Code is: 951234
 """
 ```
 
-## Web Services
+## Example for Ghasedak.io
 
-List of supported SMS web services: (Other web services will be added over time)
-لیست وب سرویس های پیامکی که پشتیبانی می شوند: (به مرور زمان دیگر وب سرویس ها نیز اضافه می شوند)
+[Ghasedak sms webservice](https://ghasedak.io) python package.
 
-|SMS Web Service |Module Name                          |Class Name                         |
-|----------------|-------------------------------|-----------------------------|
-|SMS.ir          |`sms_ir.py`                    |`SmsIR`                  |
-|Kavenegar.com   |`Not Yet`                      |`Not Yet`              |
-|Ghasedak.io     |`Not Yet`                      |`Not Yet`              |
-|etc.            |`Not Yet`                      |`Not Yet`              |
+```python
+# Install it first:
+>>> pip install ghasedak
+# Import ghasedak module 
+>>> import ghasedak
+# Create Ghasedak object
+>>> sms = ghasedak.Ghasedak("Your APIKEY")
+# Use methods inside the class like send method
+>>> sms.send({'message':'hello, world!', 'receptor' : '09xxxxxxxxx', 'linenumber': 'xxxx', 'senddate': '', 'checkid': ''})
+>>> sms.bulk1({'message':'hello, world!', 'receptor' : '09xxxxxxxxx,09xxxxxxxxx,09xxxxxxxxx', 'linenumber': 'xxxx', 'senddate': '', 'checkid': ''})
+```
+
+## license
+
+Released under the MIT License.
