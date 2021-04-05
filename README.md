@@ -55,8 +55,6 @@ Verification Code is: 951234
 [Ghasedak sms webservice](https://ghasedak.io) python package.
 
 ```python
-# Install it first:
->>> pip install ghasedak
 # Import ghasedak module 
 >>> import ghasedak
 # Create Ghasedak object
