@@ -13,8 +13,8 @@ List of supported SMS web services: (Other web services will be added over time)
 |SMS Web Service |Module Name                          |Class Name                         |
 |----------------|-------------------------------|-----------------------------|
 |SMS.ir          |`sms_ir.py`                    |`SmsIR`                  |
-|Kavenegar.com   |`ghasedak.py`                  |`Ghasedak`              |
-|Ghasedak.io     |`Not Yet`                      |`Not Yet`              |
+|Ghasedak.io     |`ghasedak.py`                  |`Ghasedak`              |
+|Kavenegar.com   |`Not Yet`                      |`Not Yet`              |
 |etc.            |`Not Yet`                      |`Not Yet`              |
 
 ## ماژول پایتون ارسال پیامک برای وب سرویس های ایرانی
